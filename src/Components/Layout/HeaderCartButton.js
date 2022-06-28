@@ -1,8 +1,8 @@
 import CartIcon from '../Cart/CartIcon';
 import calsses from './HeaderCartButton.module.css';
-const HeaderCartButton = () => {
+const HeaderCartButton = ({onClick}) => {
   return (
-    <button className={calsses.button}>
+    <button className={calsses.button} onClick={onClick}>
       <span className={calsses.icon}>
         <CartIcon />
       </span>
